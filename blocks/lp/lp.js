@@ -156,7 +156,6 @@ function buildHero() {
   const picWrap = createEl('div', 'lp-hero__pic');
   picWrap.appendChild(createImg(ASSETS.hero, '', '', true));
   const grad = createEl('div', 'lp-hero__gradient');
-  bg.append(picWrap, grad);
 
   const inner = createEl('div', 'lp-hero__inner');
   const eyebrow = createEl('p', 'lp-hero__eyebrow');
@@ -207,7 +206,8 @@ function buildHero() {
   });
 
   inner.append(eyebrow, h1, sub, btnRow, stats);
-  hero.append(bg, inner);
+  bg.append(picWrap, grad, inner);
+  hero.append(bg);
   return hero;
 }
 
@@ -342,16 +342,15 @@ function buildPreCta() {
   const inner = createEl('div', 'lp-precta__inner');
   const left = createEl('div', 'lp-precta__left');
   const h2 = createEl('h2', 'lp-precta__h2');
-  [
-    'Your space deserves',
-    'a professional',
-    'LED display.',
-  ].forEach((line, i) => {
-    const lineEl = createEl('span', 'lp-precta__h2-line');
-    lineEl.textContent = line;
-    h2.appendChild(lineEl);
-    if (i < 2) h2.appendChild(document.createElement('br'));
-  });
+  const headLn1 = createEl('span', 'lp-precta__h2-line');
+  headLn1.textContent = 'Your space deserves';
+  const headLn2 = createEl('span', 'lp-precta__h2-line');
+  headLn2.append(
+    document.createTextNode('a professional'),
+    document.createElement('br'),
+    document.createTextNode('LED display.'),
+  );
+  h2.append(headLn1, headLn2);
 
   const p = createEl('p', 'lp-precta__sub');
   p.append(
@@ -386,8 +385,9 @@ function buildPreCta() {
 }
 
 function buildLpFooter() {
-  const footer = createEl('footer', 'lp-footer');
-  const main = createEl('div', 'lp-footer__main');
+  const footer = createEl('div', 'lp-footer');
+  footer.setAttribute('role', 'contentinfo');
+  const footerMain = createEl('div', 'lp-footer__main');
 
   const colLogo = createEl('div', 'lp-footer__brand');
   const logoImg = createImg(ASSETS.logoFooter, 'D-Line');
@@ -405,7 +405,7 @@ function buildLpFooter() {
     ul.appendChild(li);
   });
 
-  main.append(colLogo, ul);
+  footerMain.append(colLogo, ul);
   const divider = createEl('div', 'lp-footer__divider');
 
   const bottom = createEl('div', 'lp-footer__bottom');
@@ -419,7 +419,7 @@ function buildLpFooter() {
   legal.append(priv, terms);
   bottom.append(copy, legal);
 
-  footer.append(main, divider, bottom);
+  footer.append(footerMain, divider, bottom);
   return footer;
 }
 

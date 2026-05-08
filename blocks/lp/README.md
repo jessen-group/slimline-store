@@ -14,7 +14,7 @@ Document Authoring exposes the block as **Landing Page (D-Line)** via **`_lp.jso
 
 ### Page chrome
 
-On decorate, the block adds **`lp-page`** to `document.body`. **`lp.css`** hides the default site `<header>` and top-level `<footer>` so the layout matches the full-page design (custom nav and footer live inside the block).
+On decorate, the block adds **`lp-page`** to `document.body`. **`lp.css`** hides the default site `<header>` and the shell `<footer>` at the end of `<body>` so the layout matches the full-page design. The marketing footer is a **`<div class="lp-footer" role="contentinfo">`** (not a `<footer>` tag) so `scripts.js` `loadFooter()` targets **`body > footer`** only and does not inject the Commerce footer fragment into the LP layout.
 
 ### Fonts
 

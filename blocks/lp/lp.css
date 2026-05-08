@@ -4,7 +4,12 @@ body.lp-page header {
   display: none !important;
 }
 
-body.lp-page > footer {
+body.lp-page footer:not(.lp-footer) {
+  display: none !important;
+}
+
+/* If commerce footer was ever injected into .lp-footer (legacy DOM), strip it */
+body.lp-page .lp-footer .footer.block {
   display: none !important;
 }
 
@@ -59,9 +64,17 @@ body.lp-page main > .section > div {
 }
 
 .lp-nav__logo-img {
+  box-sizing: border-box;
   display: block;
-  height: 24px;
+  height: auto;
+  max-height: 22px;
+  max-width: 140px;
+  object-fit: contain;
   width: auto;
+}
+
+.lp .lp-nav__logo-img {
+  max-height: 22px;
 }
 
 .lp-nav__links {
@@ -591,6 +604,13 @@ body.lp-page main > .section > div {
   padding: 82px 24px 83px;
 }
 
+.lp-precta__left {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .lp-precta__inner {
   box-sizing: border-box;
   display: flex;
@@ -600,23 +620,22 @@ body.lp-page main > .section > div {
   max-width: 1200px;
 }
 
-.lp-precta__h2 {
+h2.lp-precta__h2 {
   color: #002d44;
-  font-size: clamp(1.75rem, 3vw, 36px);
-  font-weight: 700;
+  font: 700 clamp(1.75rem, 3vw, 36px) / 1.2 montserrat, var(--type-base-font-family);
   letter-spacing: -0.8px;
-  line-height: 1.2;
-  margin: 0 0 24px;
+  margin: 0;
 }
 
 .lp-precta__h2-line {
   display: block;
+  line-height: 1.2;
+  margin: 0;
 }
 
-.lp-precta__sub {
+p.lp-precta__sub {
   color: #4a6070;
-  font-size: 16px;
-  line-height: 1.4;
+  font: 400 16px / 1.4 montserrat, var(--type-base-font-family);
   margin: 0;
 }
 
@@ -680,9 +699,17 @@ body.lp-page main > .section > div {
 }
 
 .lp-footer__logo {
+  box-sizing: border-box;
   display: block;
-  height: 24px;
+  height: auto;
+  max-height: 22px;
+  max-width: 140px;
+  object-fit: contain;
   width: auto;
+}
+
+.lp .lp-footer__logo {
+  max-height: 22px;
 }
 
 .lp-footer__byline {
