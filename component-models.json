@@ -453,6 +453,10 @@
     ]
   },
   {
+    "id": "lp",
+    "fields": []
+  },
+  {
     "id": "product-details",
     "fields": [
       {
