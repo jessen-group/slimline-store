@@ -3,11 +3,14 @@
  * Images use Figma MCP export URLs; replace with hosted assets for production longevity.
  */
 
+function staticAsset(path) {
+  const base = window.hlx?.codeBasePath ?? '';
+  return `${base}${path}`;
+}
+
 const ASSETS = {
   hero: 'https://www.figma.com/api/mcp/asset/7d42cf6e-2b69-4435-bbe2-a6db80cf5dc7',
   industry: 'https://www.figma.com/api/mcp/asset/218ecd7b-e911-4304-9436-9ebe9823abcf',
-  logo: 'https://www.figma.com/api/mcp/asset/84184e88-30c8-4a05-b314-0a4654ea4f84',
-  logoFooter: 'https://www.figma.com/api/mcp/asset/a2c33398-6b28-4b28-a26b-72a86e0bc15d',
   iconSite: 'https://www.figma.com/api/mcp/asset/3b437d0f-5482-40e6-a549-f91d12f69977',
   iconView: 'https://www.figma.com/api/mcp/asset/76711deb-a8ab-4e5b-8127-1628a232b11d',
   iconContent: 'https://www.figma.com/api/mcp/asset/b0e285f6-ab2e-4a23-80d9-f57b4fee6580',
@@ -127,7 +130,9 @@ function buildNav() {
   const nav = createEl('nav', 'lp-nav');
   const inner = createEl('div', 'lp-nav__inner');
   const logoLink = createEl('a', 'lp-nav__logo', { href: '/' });
-  logoLink.appendChild(createImg(ASSETS.logo, 'D-Line', 'lp-nav__logo-img'));
+  logoLink.appendChild(
+    createImg(staticAsset('/icons/dline/lp-nav-logo.svg'), 'D-Line', 'lp-nav__logo-img', true),
+  );
 
   const ul = createEl('ul', 'lp-nav__links');
   NAV_LINKS.forEach(({ label, href }) => {
@@ -390,7 +395,7 @@ function buildLpFooter() {
   const footerMain = createEl('div', 'lp-footer__main');
 
   const colLogo = createEl('div', 'lp-footer__brand');
-  const logoImg = createImg(ASSETS.logoFooter, 'D-Line');
+  const logoImg = createImg(staticAsset('/icons/dline/lp-footer-logo.svg'), 'D-Line');
   logoImg.className = 'lp-footer__logo';
   const byline = createEl('p', 'lp-footer__byline');
   byline.textContent = 'by Slimline Warehouse';

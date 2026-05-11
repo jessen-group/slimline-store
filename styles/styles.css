@@ -273,8 +273,8 @@ button {
   font: inherit;
 }
 
-/* links */
-a:not(.dropin-design a) {
+/* links — skip D-Line marketing LP (blocks/lp); those anchors use lp.css */
+body:not(.lp-page) a:not(.dropin-design a) {
   color: var(--color-brand-500);
   font: var(--type-body-1-strong-font);
   letter-spacing: var(--type-body-1-strong-letter-spacing);
@@ -282,7 +282,7 @@ a:not(.dropin-design a) {
   overflow-wrap: break-word;
 }
 
-a:not(.dropin-design a):hover {
+body:not(.lp-page) a:not(.dropin-design a):hover {
   color: var(--color-brand-600);
   text-decoration: underline;
 }

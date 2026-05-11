@@ -59,22 +59,24 @@ body.lp-page main > .section > div {
 }
 
 .lp-nav__logo {
+  align-items: center;
   display: flex;
+  flex-shrink: 0;
   line-height: 0;
 }
 
 .lp-nav__logo-img {
   box-sizing: border-box;
   display: block;
-  height: auto;
-  max-height: 22px;
-  max-width: 140px;
+  flex-shrink: 0;
+  height: 24px;
+  max-width: min(173px, 38vw);
   object-fit: contain;
   width: auto;
 }
 
 .lp .lp-nav__logo-img {
-  max-height: 22px;
+  height: 24px;
 }
 
 .lp-nav__links {
@@ -87,9 +89,11 @@ body.lp-page main > .section > div {
 
 .lp-nav__link {
   color: #4a6070;
+  font-family: montserrat, system-ui, sans-serif;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.2px;
+  line-height: 19.2px;
   text-decoration: none;
 }
 
@@ -701,15 +705,14 @@ p.lp-precta__sub {
 .lp-footer__logo {
   box-sizing: border-box;
   display: block;
-  height: auto;
-  max-height: 22px;
-  max-width: 140px;
+  height: 24px;
+  max-width: min(173px, 42vw);
   object-fit: contain;
   width: auto;
 }
 
 .lp .lp-footer__logo {
-  max-height: 22px;
+  height: 24px;
 }
 
 .lp-footer__byline {
