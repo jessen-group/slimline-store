@@ -48,6 +48,7 @@ header nav[aria-expanded='true'] {
     gap: 0 32px;
     max-width: 1264px;
     padding: 0 32px;
+    color: white;
   }
 
   header nav[aria-expanded='true'] {
@@ -332,7 +333,7 @@ header nav .nav-tools {
   height: 100%;
   gap: var(--spacing-small);
   align-items: center;
-  background: var(--background-color);
+  background: #121027;
   z-index: 3;
 }
 
@@ -369,12 +370,12 @@ header nav .nav-tools button.nav-cart-button[data-count]::after {
   justify-content: center;
 }
 
-header nav .nav-tools button.nav-wishlist-button {
+/* header nav .nav-tools button.nav-wishlist-button {
   background-image: url('../../icons/heart.svg');
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-}
+} */
 
 header nav .nav-tools button.nav-search-button {
   font-size: 0;
