@@ -196,6 +196,32 @@ h6 {
   scroll-margin: 40px;
 }
 
+#commercial-led-display-solutions {
+  color: #00aeef;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  margin: 0 0 18px;
+  text-transform: uppercase;
+}
+
+#the-professional, #led-display, #partner-for-business {
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 52px);
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 1.2;
+  margin: 0 0 18px;
+}
+
+#design-supply-and-support-of-modular-led-display-systems-for-retail-and, #commercial-environments-specified-to-your-space----never-one-size-fits-all {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.4;
+  margin: 0;
+  max-width: 580px;
+}
+
 h1 {
   font: var(--type-display-1-font);
   letter-spacing: var(--type-display-1-letter-spacing);
