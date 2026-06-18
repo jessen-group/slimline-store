@@ -512,6 +512,7 @@ header .nav-search-input .search_autocomplete .popover-container {
   background-image: url(../../icons/user.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 25px 25px;
 }
 
 .dropdown-wrapper.nav-tools-wrapper .nav-auth-menu-panel {
