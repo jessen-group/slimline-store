@@ -509,6 +509,9 @@ header .nav-search-input .search_autocomplete .popover-container {
   align-items: center;
   width: auto;
   min-width: 40px;
+  background-image: url(../../icons/user.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .dropdown-wrapper.nav-tools-wrapper .nav-auth-menu-panel {
