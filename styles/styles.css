@@ -484,7 +484,7 @@ main .section[data-margin="small"] {
 
 main .section[data-margin="medium"] {
     /* margin: var(--spacing-small) 0; */
-    background-image: url('../../images/main-bg-saturated.jpg');
+    background-image: url('../../images/main-bg-resized.png');
     background-size: cover;
     background-position: center;
 }
