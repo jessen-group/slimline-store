@@ -323,7 +323,7 @@ button.button {
   margin: var(--spacing-medium) 0;
   border: var(--shape-border-width-3) solid transparent;
   border-radius: var(--shape-border-radius-2);
-  padding: 1em 1.2em;
+  padding: 0.7em 1em;
   font: var(--type-button-2-font);
   letter-spacing: var(--type-button-2-letter-spacing);
   font-style: normal;
