@@ -359,7 +359,6 @@ button.button {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  margin-bottom: 60px;
 }
 
 main a.button:hover,
