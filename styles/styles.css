@@ -299,9 +299,9 @@ pre {
   font-family: var(--type-fixed-font-family);
 }
 
-pre {
+/* pre {
   overflow: scroll;
-}
+} */
 
 main pre {
   background-color: #e8e8e800;
