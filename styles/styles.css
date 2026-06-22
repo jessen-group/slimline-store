@@ -304,11 +304,13 @@ pre {
 }
 
 main pre {
-  background-color: var(--color-neutral-300);
-  padding: 1em;
+  background-color: #e8e8e800;
+  /* padding: 1em; */
   border-radius: 0.25em;
   overflow-x: auto;
   white-space: pre;
+  color: white;
+
 }
 
 main > div {
