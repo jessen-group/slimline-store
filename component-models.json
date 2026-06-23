@@ -235,6 +235,28 @@
     ]
   },
   {
+    "id": "richtext",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "rte",
+        "label": "Rich Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "longertext",
+    "fields": [
+      {
+        "component": "textarea",
+        "name": "textarea",
+        "label": "Text Area",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "columns",
     "fields": [
       {
