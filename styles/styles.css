@@ -196,7 +196,7 @@ h6 {
   scroll-margin: 40px;
 }
 
-#commercial-led-display-solutions {
+#commercial-led-display-solutions, #commercial-reliability {
   color: #00aeef;
   font-size: 10px;
   font-weight: 600;
@@ -206,7 +206,7 @@ h6 {
   margin-top: 60px;
 }
 
-#the-professional, #led-display, #partner-for-business {
+#the-professional, #led-display, #partner-for-business, #high-brightnesspro-digital-displays {
   color: #fff;
   font-size: clamp(2rem, 5vw, 52px);
   font-weight: 700;
