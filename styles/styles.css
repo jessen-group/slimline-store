@@ -206,6 +206,16 @@ h6 {
   margin-top: 60px;
 }
 
+#commercial-reliability {
+  color: #00aeef;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  margin: 0 0 18px;
+  text-transform: uppercase;
+  margin-top: 100px;
+}
+
 #the-professional, #led-display, #partner-for-business, #high-brightnesspro-digital-displays {
   color: #fff;
   font-size: clamp(2rem, 5vw, 52px);
@@ -443,11 +453,12 @@ main > .section > div {
   padding: 0 var(--spacing-medium);
 }
 
-main > .section:first-of-type[data-padding="large"] {
+main > .section:first-of-type {
   margin-top: 0;
   background-image: url('../../images/main-bg-gradient.png');
   background-size: cover;
   background-position: center;
+  height: 500px;
 }
 
 @media (min-width: 900px) {
