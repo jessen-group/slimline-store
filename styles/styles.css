@@ -318,7 +318,7 @@ pre {
   font-family: var(--type-fixed-font-family);
 }
 
-div > div > pre > code {
+div > div > div > pre > code {
   font: var(--type-body-2-default-font);
   letter-spacing: var(--type-body-2-default-letter-spacing);
   font-family: var(--type-fixed-font-family);
