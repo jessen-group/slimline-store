@@ -1,0 +1,110 @@
+{
+  "definitions": [
+    {
+      "title": "Product Carousel",
+      "id": "product-carousel",
+      "model": "product-carousel",
+      "plugins": {
+        "da": {
+          "rows": 1,
+          "columns": 1,
+          "fields": [
+            {
+              "name": "products",
+              "selector": "div>div.product-carousel>div.product-item"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "title": "Product Item",
+      "id": "product-item",
+      "model": "product-item",
+      "plugins": {
+        "da": {
+          "rows": 1,
+          "columns": 1,
+          "fields": [
+            { "name": "image", "selector": "div>div.product-item>picture>img[src]" },
+            { "name": "alt", "selector": "div>div.product-item>picture>img[alt]" },
+            { "name": "productName", "selector": "div>div.product-item>h3" },
+            { "name": "description", "selector": "div>div.product-item>p" },
+            { "name": "price", "selector": "div>div.product-item>.price" },
+            { "name": "ctaText", "selector": "div>div.product-item>a" },
+            { "name": "ctaLink", "selector": "div>div.product-item>a[href]" }
+          ]
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "product-carousel",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "products",
+          "label": "Products",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "product-item",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "image",
+          "label": "Product Image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "alt",
+          "label": "Alt Text",
+          "value": ""
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "productName",
+          "label": "Product Name",
+          "value": ""
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "description",
+          "label": "Description",
+          "value": ""
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "price",
+          "label": "Price",
+          "value": ""
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "ctaText",
+          "label": "CTA Text",
+          "value": "View Product"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "ctaLink",
+          "label": "CTA Link",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

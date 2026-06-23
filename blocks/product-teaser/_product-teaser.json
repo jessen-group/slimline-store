@@ -1,0 +1,81 @@
+{
+  "definitions": [
+    {
+      "title": "Product Teaser",
+      "id": "product-teaser",
+      "model": "product-teaser",
+      "plugins": {
+        "da": {
+          "rows": 1,
+          "columns": 1,
+          "fields": [
+            { "name": "image", "selector": "div>div>picture>img[src]" },
+            { "name": "alt", "selector": "div>div>picture>img[alt]" },
+            { "name": "productName", "selector": "div>div>h2" },
+            { "name": "description", "selector": "div>div>p" },
+            { "name": "price", "selector": "div>div>.price" },
+            { "name": "ctaText", "selector": "div>div>a" },
+            { "name": "ctaLink", "selector": "div>div>a[href]" }
+          ]
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "product-teaser",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "image",
+          "label": "Product Image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "alt",
+          "label": "Alt Text",
+          "value": ""
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "productName",
+          "label": "Product Name",
+          "value": ""
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "description",
+          "label": "Description",
+          "value": ""
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "price",
+          "label": "Price",
+          "value": ""
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "ctaText",
+          "label": "CTA Text",
+          "value": "View Product"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "ctaLink",
+          "label": "CTA Link",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

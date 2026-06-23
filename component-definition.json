@@ -586,6 +586,233 @@
               ]
             }
           }
+        },
+        {
+          "title": "Product Teaser",
+          "id": "product-teaser",
+          "model": "product-teaser",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div>div>picture>img[src]"
+                },
+                {
+                  "name": "alt",
+                  "selector": "div>div>picture>img[alt]"
+                },
+                {
+                  "name": "productName",
+                  "selector": "div>div>h2"
+                },
+                {
+                  "name": "description",
+                  "selector": "div>div>p"
+                },
+                {
+                  "name": "price",
+                  "selector": "div>div>.price"
+                },
+                {
+                  "name": "ctaText",
+                  "selector": "div>div>a"
+                },
+                {
+                  "name": "ctaLink",
+                  "selector": "div>div>a[href]"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Product List",
+          "id": "product-list",
+          "model": "product-list",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div>div.product>picture>img[src]"
+                },
+                {
+                  "name": "alt",
+                  "selector": "div>div.product>picture>img[alt]"
+                },
+                {
+                  "name": "productName",
+                  "selector": "div>div.product>h2"
+                },
+                {
+                  "name": "description",
+                  "selector": "div>div.product>p"
+                },
+                {
+                  "name": "price",
+                  "selector": "div>div.product>.price"
+                },
+                {
+                  "name": "ctaText",
+                  "selector": "div>div.product>a"
+                },
+                {
+                  "name": "ctaLink",
+                  "selector": "div>div.product>a[href]"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Featured Category",
+          "id": "featured-category",
+          "model": "featured-category",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div>div.featured-category>picture>img[src]"
+                },
+                {
+                  "name": "alt",
+                  "selector": "div>div.featured-category>picture>img[alt]"
+                },
+                {
+                  "name": "title",
+                  "selector": "div>div.featured-category>h2"
+                },
+                {
+                  "name": "description",
+                  "selector": "div>div.featured-category>p"
+                },
+                {
+                  "name": "ctaText",
+                  "selector": "div>div.featured-category>a"
+                },
+                {
+                  "name": "ctaLink",
+                  "selector": "div>div.featured-category>a[href]"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Category Carousel",
+          "id": "category-carousel",
+          "model": "category-carousel",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "categories",
+                  "selector": "div>div.category-carousel>div.category-item"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Category Item",
+          "id": "category-item",
+          "model": "category-item",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div>div.category-item>picture>img[src]"
+                },
+                {
+                  "name": "alt",
+                  "selector": "div>div.category-item>picture>img[alt]"
+                },
+                {
+                  "name": "title",
+                  "selector": "div>div.category-item>h3"
+                },
+                {
+                  "name": "ctaText",
+                  "selector": "div>div.category-item>a"
+                },
+                {
+                  "name": "ctaLink",
+                  "selector": "div>div.category-item>a[href]"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Product Carousel",
+          "id": "product-carousel",
+          "model": "product-carousel",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "products",
+                  "selector": "div>div.product-carousel>div.product-item"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Product Item",
+          "id": "product-item",
+          "model": "product-item",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div>div.product-item>picture>img[src]"
+                },
+                {
+                  "name": "alt",
+                  "selector": "div>div.product-item>picture>img[alt]"
+                },
+                {
+                  "name": "productName",
+                  "selector": "div>div.product-item>h3"
+                },
+                {
+                  "name": "description",
+                  "selector": "div>div.product-item>p"
+                },
+                {
+                  "name": "price",
+                  "selector": "div>div.product-item>.price"
+                },
+                {
+                  "name": "ctaText",
+                  "selector": "div>div.product-item>a"
+                },
+                {
+                  "name": "ctaLink",
+                  "selector": "div>div.product-item>a[href]"
+                }
+              ]
+            }
+          }
         }
       ]
     },
@@ -593,6 +820,64 @@
       "title": "Product",
       "id": "product",
       "components": [
+        {
+          "title": "Product Carousel",
+          "id": "product-carousel",
+          "model": "product-carousel",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "products",
+                  "selector": "div>div.product-carousel>div.product-item"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Product Item",
+          "id": "product-item",
+          "model": "product-item",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div>div.product-item>picture>img[src]"
+                },
+                {
+                  "name": "alt",
+                  "selector": "div>div.product-item>picture>img[alt]"
+                },
+                {
+                  "name": "productName",
+                  "selector": "div>div.product-item>h3"
+                },
+                {
+                  "name": "description",
+                  "selector": "div>div.product-item>p"
+                },
+                {
+                  "name": "price",
+                  "selector": "div>div.product-item>.price"
+                },
+                {
+                  "name": "ctaText",
+                  "selector": "div>div.product-item>a"
+                },
+                {
+                  "name": "ctaLink",
+                  "selector": "div>div.product-item>a[href]"
+                }
+              ]
+            }
+          }
+        },
         {
           "title": "Product Details",
           "id": "product-details",
@@ -614,12 +899,94 @@
           }
         },
         {
+          "title": "Product List",
+          "id": "product-list",
+          "model": "product-list",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div>div.product>picture>img[src]"
+                },
+                {
+                  "name": "alt",
+                  "selector": "div>div.product>picture>img[alt]"
+                },
+                {
+                  "name": "productName",
+                  "selector": "div>div.product>h2"
+                },
+                {
+                  "name": "description",
+                  "selector": "div>div.product>p"
+                },
+                {
+                  "name": "price",
+                  "selector": "div>div.product>.price"
+                },
+                {
+                  "name": "ctaText",
+                  "selector": "div>div.product>a"
+                },
+                {
+                  "name": "ctaLink",
+                  "selector": "div>div.product>a[href]"
+                }
+              ]
+            }
+          }
+        },
+        {
           "title": "Product Recommendations",
           "id": "product-recommendations",
           "model": "product-recommendations",
           "plugins": {
             "da": {
               "type": "key-value-block"
+            }
+          }
+        },
+        {
+          "title": "Product Teaser",
+          "id": "product-teaser",
+          "model": "product-teaser",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div>div>picture>img[src]"
+                },
+                {
+                  "name": "alt",
+                  "selector": "div>div>picture>img[alt]"
+                },
+                {
+                  "name": "productName",
+                  "selector": "div>div>h2"
+                },
+                {
+                  "name": "description",
+                  "selector": "div>div>p"
+                },
+                {
+                  "name": "price",
+                  "selector": "div>div>.price"
+                },
+                {
+                  "name": "ctaText",
+                  "selector": "div>div>a"
+                },
+                {
+                  "name": "ctaLink",
+                  "selector": "div>div>a[href]"
+                }
+              ]
             }
           }
         }

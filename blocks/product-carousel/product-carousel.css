@@ -1,0 +1,110 @@
+/* Product Carousel Wrapper */
+.product-carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hide scrollbar (optional) */
+.product-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.product-carousel {
+  scrollbar-width: none;
+}
+
+/* Product Item Card */
+.product-carousel .product-item {
+  flex: 0 0 auto;
+  width: 260px;
+  scroll-snap-align: start;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid #eaeaea;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover effect */
+.product-carousel .product-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Image */
+.product-carousel .product-item picture,
+.product-carousel .product-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Content Wrapper */
+.product-carousel .product-item > div {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+/* Product Name */
+.product-carousel .product-item h3 {
+  font-size: 16px;
+  margin: 0;
+  color: #222;
+  line-height: 1.3;
+}
+
+/* Description */
+.product-carousel .product-item p {
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Price */
+.product-carousel .product-item .price {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a73e8;
+  margin-top: 4px;
+}
+
+/* CTA Button */
+.product-carousel .product-item a {
+  margin-top: auto;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 12px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 13px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.product-carousel .product-item a:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-carousel .product-item {
+    width: 200px;
+  }
+
+  .product-carousel .product-item img {
+    height: 160px;
+  }
+}

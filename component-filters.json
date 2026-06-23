@@ -44,7 +44,12 @@
       "product-recommendations",
       "targeted-block",
       "text",
-      "teaser"
+      "teaser",
+      "product-teaser",
+      "product-list",
+      "featured-category",
+      "category-carousel",
+      "product-carousel"
     ]
   },
   {

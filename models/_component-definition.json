@@ -54,6 +54,21 @@
         },
         {
           "...": "../blocks/teaser/_*.json#/definitions"
+        },
+        {
+          "...": "../blocks/product-teaser/_*.json#/definitions"
+        },
+        {
+          "...": "../blocks/product-list/_*.json#/definitions"
+        },
+        {
+          "...": "../blocks/featured-category/_*.json#/definitions"
+        },
+        {
+          "...": "../blocks/category-carousel/_*.json#/definitions"
+        },
+        {
+          "...": "../blocks/product-carousel/_*.json#/definitions"
         }
       ]
     },
