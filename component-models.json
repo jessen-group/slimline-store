@@ -235,28 +235,6 @@
     ]
   },
   {
-    "id": "richtext",
-    "fields": [
-      {
-        "component": "richtext",
-        "name": "rte",
-        "label": "Rich Text",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "longertext",
-    "fields": [
-      {
-        "component": "textarea",
-        "name": "textarea",
-        "label": "Text Area",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
     "id": "columns",
     "fields": [
       {
@@ -269,13 +247,6 @@
           "numberMin": 1,
           "numberMax": 6
         }
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
       }
     ]
   },
@@ -561,6 +532,53 @@
         "name": "fragment",
         "label": "Fragment",
         "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "teaser",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "alt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "description",
+        "label": "Description",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "ctaText",
+        "label": "CTA Text",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "ctaLink",
+        "label": "CTA Link",
+        "value": ""
       }
     ]
   }

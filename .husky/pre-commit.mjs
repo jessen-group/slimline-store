@@ -2,10 +2,9 @@ import { exec } from "node:child_process";
 
 const run = (cmd) => new Promise((resolve, reject) => exec(
   cmd,
-  (error, stdout, stderr) => {
+  (error, stdout) => {
     if (error) reject(error);
-    if (stderr) reject(stderr);
-    resolve(stdout);
+    else resolve(stdout);
   }
 ));
 

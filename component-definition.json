@@ -261,17 +261,6 @@
           }
         },
         {
-          "title": "Landing Page (D-Line)",
-          "id": "lp",
-          "model": "lp",
-          "plugins": {
-            "da": {
-              "rows": 1,
-              "columns": 1
-            }
-          }
-        },
-        {
           "title": "Commerce Account Header",
           "id": "commerce-account-header",
           "model": "commerce-account-header",
@@ -558,6 +547,43 @@
           "plugins": {
             "da": {
               "type": "key-value-block"
+            }
+          }
+        },
+        {
+          "title": "Teaser",
+          "id": "teaser",
+          "model": "teaser",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div>div>picture>img[src]"
+                },
+                {
+                  "name": "alt",
+                  "selector": "div>div>picture>img[alt]"
+                },
+                {
+                  "name": "title",
+                  "selector": "div>div>h2"
+                },
+                {
+                  "name": "description",
+                  "selector": "div>div>p"
+                },
+                {
+                  "name": "ctaText",
+                  "selector": "div>div>a"
+                },
+                {
+                  "name": "ctaLink",
+                  "selector": "div>div>a[href]"
+                }
+              ]
             }
           }
         }
