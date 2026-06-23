@@ -10,8 +10,6 @@
  * governing permissions and limitations under the License.
  */
 
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
-
 /* stylelint-disable no-empty-source */
 :root, .dropin-design {
   /* Adobe Commerce Dropin design tokens */
@@ -284,7 +282,7 @@ h3 {
 h4 {
   font-family: "Montserrat", sans-serif;
   letter-spacing: var(--type-headline-1-letter-spacing);
-  margin-top: 0.5em;
+  margin-top: 1em;
 }
 
 h5 {
