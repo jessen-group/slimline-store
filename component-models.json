@@ -269,6 +269,13 @@
           "numberMin": 1,
           "numberMax": 6
         }
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
       }
     ]
   },
