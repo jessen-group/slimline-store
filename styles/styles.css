@@ -196,7 +196,7 @@ h6 {
   scroll-margin: 40px;
 }
 
-#commercial-led-display-solutions, #commercial-reliability {
+#commercial-led-display-solutions {
   color: #00aeef;
   font-size: 10px;
   font-weight: 600;
@@ -208,15 +208,24 @@ h6 {
 
 #commercial-reliability {
   color: #00aeef;
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 2.5px;
+  font-size: 15px;
+  font-weight: 200;
+  letter-spacing: 2px;
   margin: 0 0 18px;
   text-transform: uppercase;
   margin-top: 100px;
 }
 
-#the-professional, #led-display, #partner-for-business, #high-brightnesspro-digital-displays {
+#the-professional, #led-display, #partner-for-business {
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 52px);
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 1.2;
+  margin: 0 0 18px;
+}
+
+#high-brightnesspro-digital-displays {
   color: #fff;
   font-size: clamp(2rem, 5vw, 52px);
   font-weight: 700;
