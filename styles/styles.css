@@ -252,6 +252,16 @@ ul li::marker {
     color: #00aeef;
 }
 
+#trusted-by {
+  color: #9eadb8;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 h1 {
   /* font: var(--type-display-1-font); */
   font-family: "Montserrat", sans-serif;
