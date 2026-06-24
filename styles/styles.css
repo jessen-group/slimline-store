@@ -493,10 +493,10 @@ main > .section > div {
 
 main > .section:first-of-type {
   margin-top: 0;
-  background-image: url('../../images/main-bg-gradient.png');
+  /* background-image: url('../../images/main-bg-gradient.png');
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 500px; */
 }
 
 @media (min-width: 900px) {
