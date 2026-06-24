@@ -196,7 +196,8 @@ h6 {
   scroll-margin: 40px;
 }
 
-#commercial-led-display-solutions {
+/* headline part */
+#commercial-led-display-solutions, #commercial-reliability {
   color: #00aeef;
   font-size: 15px;
   font-weight: 200;
@@ -207,18 +208,7 @@ h6 {
   font-family: "Montserrat", sans-serif;
 }
 
-#commercial-reliability {
-  color: #00aeef;
-  font-size: 15px;
-  font-weight: 200;
-  letter-spacing: 2px;
-  margin: 0 0 18px;
-  text-transform: uppercase;
-  margin-top: 120px;
-  font-family: "Montserrat", sans-serif;
-}
-
-#the-professional, #led-display, #partner-for-business {
+#the-professional, #led-display, #partner-for-business, #high-brightnesspro-digital-displays {
   color: #fff;
   font-size: clamp(2rem, 5vw, 52px);
   font-weight: 300;
@@ -227,16 +217,7 @@ h6 {
   margin: 0 0 18px;
   font-family: "Montserrat", sans-serif;
 }
-
-#high-brightnesspro-digital-displays {
-  color: #fff;
-  font-size: clamp(2rem, 5vw, 52px);
-  font-weight: 300;
-  letter-spacing: -2px;
-  line-height: 1.2;
-  margin: 0 0 18px;
-  font-family: "Montserrat", sans-serif;
-}
+/* end of headline part */
 
 #design-supply-and-support-of-modular-led-display-systems-for-retail-and, #commercial-environments-specified-to-your-space----never-one-size-fits-all {
   color: #fff;
