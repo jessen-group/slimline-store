@@ -237,11 +237,11 @@ header nav .nav-sections ul>li:empty {
     text-decoration: none;
   }
 
-  header nav .nav-sections ul {
+  /* header nav .nav-sections ul {
     display: flex;
     gap: 24px;
     margin: 0;
-  }
+  } */
 
   header nav .nav-sections .default-content-wrapper>ul>li ul {
     display: none;
@@ -780,7 +780,7 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #111;
+  background: #121027;
   padding: 0 2rem;
   height: 80px;
 }
