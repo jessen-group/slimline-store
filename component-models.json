@@ -433,10 +433,6 @@
     ]
   },
   {
-    "id": "customed-nav",
-    "fields": []
-  },
-  {
     "id": "enrichment",
     "fields": [
       {
@@ -804,99 +800,6 @@
         "name": "fragment",
         "label": "Fragment",
         "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "teaser-container-with-buttons",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "alt",
-        "label": "Alt Text",
-        "value": ""
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "title",
-        "label": "Title",
-        "value": ""
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "description",
-        "label": "Description",
-        "value": ""
-      },
-      {
-        "component": "multifield",
-        "name": "buttons",
-        "label": "Buttons",
-        "valueType": "object",
-        "fields": [
-          {
-            "component": "text",
-            "name": "label",
-            "label": "Button Label",
-            "valueType": "string"
-          },
-          {
-            "component": "text",
-            "name": "url",
-            "label": "Button URL",
-            "valueType": "string"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "teaser-container",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "alt",
-        "label": "Alt Text",
-        "value": ""
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "pretitle",
-        "label": "Pretitle",
-        "value": ""
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "title",
-        "label": "Title",
-        "value": ""
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "description",
-        "label": "Description",
-        "value": ""
       }
     ]
   },

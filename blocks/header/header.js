@@ -175,7 +175,66 @@ export default async function decorate(block) {
   block.textContent = '';
   const nav = document.createElement('nav');
   nav.id = 'nav';
-  while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
+  // while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
+
+  nav.innerHTML = `
+    <div class="nav-brand">
+      <a href="/">
+        <img src="/icons/dline/logo-white.png" alt="DLine Logo">
+      </a>
+    </div>
+
+    <div class="nav-sections">
+      <ul>
+        <li class="nav-drop">
+          <span>Products</span>
+          <ul class="dropdown">
+            <li><a href="/products/product-1">Product 1</a></li>
+            <li><a href="/products/product-2">Product 2</a></li>
+            <li><a href="/products/product-3">Product 3</a></li>
+            <li><a href="/products/product-4">Product 4</a></li>
+            <li><a href="/products/product-5">Product 5</a></li>
+            <li><a href="/products/product-6">Product 6</a></li>
+            <li><a href="/products/product-7">Product 7</a></li>
+          </ul>
+        </li>
+
+        <li><a href="/solutions">Solutions</a></li>
+
+        <li class="nav-drop">
+          <span>Industries</span>
+          <ul class="dropdown">
+            <li><a href="/industries/1">Industry 1</a></li>
+            <li><a href="/industries/2">Industry 2</a></li>
+            <li><a href="/industries/3">Industry 3</a></li>
+            <li><a href="/industries/4">Industry 4</a></li>
+            <li><a href="/industries/5">Industry 5</a></li>
+            <li><a href="/industries/6">Industry 6</a></li>
+            <li><a href="/industries/7">Industry 7</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-drop">
+          <span>Services</span>
+          <ul class="dropdown">
+            <li><a href="/services/1">Service 1</a></li>
+            <li><a href="/services/2">Service 2</a></li>
+            <li><a href="/services/3">Service 3</a></li>
+            <li><a href="/services/4">Service 4</a></li>
+            <li><a href="/services/5">Service 5</a></li>
+            <li><a href="/services/6">Service 6</a></li>
+            <li><a href="/services/7">Service 7</a></li>
+          </ul>
+        </li>
+
+        <li><a href="/case-studies">Case Studies</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-tools"></div>
+  `;
 
   const classes = ['brand', 'sections', 'tools'];
   classes.forEach((c, i) => {

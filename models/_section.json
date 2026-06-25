@@ -169,10 +169,7 @@
         "product-list",
         "featured-category",
         "category-carousel",
-        "product-carousel",
-        "customed-nav",
-        "teaser-container",
-        "teaser-container-with-buttons"
+        "product-carousel"
       ]
     }
   ]
