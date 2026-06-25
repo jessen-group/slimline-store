@@ -169,7 +169,8 @@
         "product-list",
         "featured-category",
         "category-carousel",
-        "product-carousel"
+        "product-carousel",
+        "customed-nav"
       ]
     }
   ]
