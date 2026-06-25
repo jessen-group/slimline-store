@@ -19,12 +19,12 @@ const overlay = document.createElement('div');
 overlay.classList.add('overlay');
 document.querySelector('header').insertAdjacentElement('afterbegin', overlay);
 
-const logo = nav.querySelector('.nav-brand img');
+// const logo = nav.querySelector('.nav-brand img');
 
-if (logo) {
-  logo.src = '/icons/dline/logo-white.png';
-  logo.alt = 'Dline';
-}
+// if (logo) {
+//   logo.src = '/icons/dline/logo-white.png';
+//   logo.alt = 'Dline';
+// }
 
 function closeOnEscape(e) {
   if (e.code === 'Escape') {
