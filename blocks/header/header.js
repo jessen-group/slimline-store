@@ -190,7 +190,7 @@ export default async function decorate(block) {
           <span>Products</span>
           <ul class="dropdown">
             <li><a href="/products/product-1">Commercial Display Screens</a></li>
-            <li><a href="https://main--aem-boilerplate--adobe.hlx.page/products/high-brightness-window-displays">High Brightness Window Displays</a></li>
+            <li><a href="https://main--slimline-store--jessen-group.aem.page/products/high-brightness-window-displays">High Brightness Window Displays</a></li>
             <li><a href="/products/product-3">Outdoor Digital Displays</a></li>
             <li><a href="/products/product-4">Interactive Kiosks</a></li>
             <li><a href="/products/product-5">Freestanding Digital Displays</a></li>
@@ -217,7 +217,7 @@ export default async function decorate(block) {
         <li class="nav-drop">
           <span>Services</span>
           <ul class="dropdown">
-            <li><a href="https://main--aem-boilerplate--adobe.hlx.page/services/dline-cms-powered-by-optisigns">DLine CMS powered by OptiSigns</a></li>
+            <li><a href="https://main--slimline-store--jessen-group.aem.page/services/dline-cms-powered-by-optisigns">DLine CMS powered by OptiSigns</a></li>
           </ul>
         </li>
 
