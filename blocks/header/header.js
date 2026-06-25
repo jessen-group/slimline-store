@@ -165,6 +165,7 @@ function setupSubmenu(navSection) {
 export default async function decorate(block) {
   // load nav as fragment
   const navMeta = getMetadata('nav');
+  console.log('NAV Meta:', navMeta);
   const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
   console.log('NAV PATH:', navPath);
   const fragment = await loadFragment(navPath);
@@ -216,7 +217,7 @@ export default async function decorate(block) {
       });
   }
 
-  // const navTools = nav.querySelector('.nav-tools');
+  const navTools = nav.querySelector('.nav-tools');
 
   // /** Wishlist */
   // const wishlist = document.createRange().createContextualFragment(`
