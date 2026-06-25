@@ -189,13 +189,13 @@ export default async function decorate(block) {
         <li class="nav-drop">
           <span>Products</span>
           <ul class="dropdown">
-            <li><a href="/products/product-1">Product 1</a></li>
-            <li><a href="/products/product-2">Product 2</a></li>
-            <li><a href="/products/product-3">Product 3</a></li>
-            <li><a href="/products/product-4">Product 4</a></li>
-            <li><a href="/products/product-5">Product 5</a></li>
-            <li><a href="/products/product-6">Product 6</a></li>
-            <li><a href="/products/product-7">Product 7</a></li>
+            <li><a href="/products/product-1">Commercial Display Screens</a></li>
+            <li><a href="https://main--aem-boilerplate--adobe.hlx.page/products/high-brightness-window-displays">High Brightness Window Displays</a></li>
+            <li><a href="/products/product-3">Outdoor Digital Displays</a></li>
+            <li><a href="/products/product-4">Interactive Kiosks</a></li>
+            <li><a href="/products/product-5">Freestanding Digital Displays</a></li>
+            <li><a href="/products/product-6">Accessories & Mounting</a></li>
+            <li><a href="/products/product-7">Video Walls & Large Format (LED)</a></li>
           </ul>
         </li>
 
@@ -204,26 +204,20 @@ export default async function decorate(block) {
         <li class="nav-drop">
           <span>Industries</span>
           <ul class="dropdown">
-            <li><a href="/industries/1">Industry 1</a></li>
-            <li><a href="/industries/2">Industry 2</a></li>
-            <li><a href="/industries/3">Industry 3</a></li>
-            <li><a href="/industries/4">Industry 4</a></li>
-            <li><a href="/industries/5">Industry 5</a></li>
-            <li><a href="/industries/6">Industry 6</a></li>
-            <li><a href="/industries/7">Industry 7</a></li>
+            <li><a href="/industries/1">Retail</a></li>
+            <li><a href="/industries/2">Food & Hospitality</a></li>
+            <li><a href="/industries/3">Transport & Infrastructure</a></li>
+            <li><a href="/industries/4">Education & Community</a></li>
+            <li><a href="/industries/5">Government & Public Spaces</a></li>
+            <li><a href="/industries/6">Corporate / Workplace</a></li>
+            <li><a href="/industries/7">Retail Services</a></li>
           </ul>
         </li>
 
         <li class="nav-drop">
           <span>Services</span>
           <ul class="dropdown">
-            <li><a href="/services/1">Service 1</a></li>
-            <li><a href="/services/2">Service 2</a></li>
-            <li><a href="/services/3">Service 3</a></li>
-            <li><a href="/services/4">Service 4</a></li>
-            <li><a href="/services/5">Service 5</a></li>
-            <li><a href="/services/6">Service 6</a></li>
-            <li><a href="/services/7">Service 7</a></li>
+            <li><a href="https://main--aem-boilerplate--adobe.hlx.page/services/dline-cms-powered-by-optisigns">DLine CMS powered by OptiSigns</a></li>
           </ul>
         </li>
 
