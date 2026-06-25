@@ -19,14 +19,6 @@ const overlay = document.createElement('div');
 overlay.classList.add('overlay');
 document.querySelector('header').insertAdjacentElement('afterbegin', overlay);
 
-// const nav = document.getElementById('nav');
-// const logo = nav.querySelector('.nav-brand img');
-
-// if (logo) {
-//   logo.src = '/icons/dline/logo-white.png';
-//   logo.alt = 'Dline';
-// }
-
 function closeOnEscape(e) {
   if (e.code === 'Escape') {
     const nav = document.getElementById('nav');
@@ -224,26 +216,26 @@ export default async function decorate(block) {
       });
   }
 
-  const navTools = nav.querySelector('.nav-tools');
+  // const navTools = nav.querySelector('.nav-tools');
 
-  /** Wishlist */
-  const wishlist = document.createRange().createContextualFragment(`
-     <div class="wishlist-wrapper nav-tools-wrapper">
-       <button type="button" class="nav-wishlist-button" aria-label="Wishlist"></button>
-       <div class="wishlist-panel nav-tools-panel"></div>
-     </div>
-   `);
+  // /** Wishlist */
+  // const wishlist = document.createRange().createContextualFragment(`
+  //    <div class="wishlist-wrapper nav-tools-wrapper">
+  //      <button type="button" class="nav-wishlist-button" aria-label="Wishlist"></button>
+  //      <div class="wishlist-panel nav-tools-panel"></div>
+  //    </div>
+  //  `);
 
-  navTools.append(wishlist);
+  // navTools.append(wishlist);
 
-  const wishlistButton = navTools.querySelector('.nav-wishlist-button');
+  // const wishlistButton = navTools.querySelector('.nav-wishlist-button');
 
-  const wishlistMeta = getMetadata('wishlist');
-  const wishlistPath = wishlistMeta ? new URL(wishlistMeta, window.location).pathname : '/wishlist';
+  // const wishlistMeta = getMetadata('wishlist');
+  // const wishlistPath = wishlistMeta ? new URL(wishlistMeta, window.location).pathname : '/wishlist';
 
-  wishlistButton.addEventListener('click', () => {
-    window.location.href = rootLink(wishlistPath);
-  });
+  // wishlistButton.addEventListener('click', () => {
+  //   window.location.href = rootLink(wishlistPath);
+  // });
 
   /** Mini Cart */
   const excludeMiniCartFromPaths = ['/checkout'];
