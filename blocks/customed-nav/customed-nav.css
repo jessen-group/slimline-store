@@ -1,0 +1,139 @@
+/* ----- Nav ----- */
+
+.customed-nav {
+  background: #00101c;
+  border-bottom: 1px solid rgb(0 45 68 / 5%);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.customed-nav__inner {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 12px 24px;
+}
+
+.customed-nav__logo {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  line-height: 0;
+}
+
+.customed-nav__logo-img {
+  box-sizing: border-box;
+  display: block;
+  flex-shrink: 0;
+  height: 24px;
+  max-width: min(173px, 38vw);
+  object-fit: contain;
+  width: auto;
+}
+
+.customed-nav .customed-nav__logo-img {
+  height: 24px;
+}
+
+.customed-nav__links {
+  display: none;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.customed-nav__link {
+  color: #4a6070;
+  font-family: montserrat, system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  line-height: 19.2px;
+  text-decoration: none;
+}
+
+.customed-nav__link:hover {
+  color: #00aeef;
+  text-decoration: none;
+}
+
+.customed-nav__right {
+  align-items: center;
+  display: flex;
+  gap: 24px;
+}
+
+.customed-nav__phone {
+  color: #00aeef;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.customed-nav-btn {
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 600;
+  justify-content: center;
+  letter-spacing: 0.2px;
+  line-height: 1.25;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.customed-nav-btn--nav {
+  background: #00aeef;
+  color: #00101c;
+}
+
+.customed-nav-btn--nav:hover {
+  filter: brightness(1.05);
+  text-decoration: none;
+}
+
+.customed-nav-btn--hero {
+  background: #00aeef;
+  color: #f1f1f1;
+}
+
+.customed-nav-btn--hero:hover {
+  filter: brightness(1.05);
+  text-decoration: none;
+}
+
+.customed-nav-btn--industry {
+  background: #00aeef;
+  color: #fff;
+}
+
+.customed-nav-btn--industry:hover {
+  filter: brightness(1.05);
+  text-decoration: none;
+}
+
+.customed-nav-btn--precta {
+  background: #00aeef;
+  color: #f1f1f1;
+}
+
+.customed-nav-btn--precta:hover {
+  filter: brightness(1.05);
+  text-decoration: none;
+}
+
+@media (min-width: 900px) {
+  .customed-nav-nav__links {
+    display: flex;
+  }
+}

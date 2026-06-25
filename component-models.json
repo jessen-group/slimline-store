@@ -433,6 +433,10 @@
     ]
   },
   {
+    "id": "customed-nav",
+    "fields": []
+  },
+  {
     "id": "enrichment",
     "fields": [
       {
