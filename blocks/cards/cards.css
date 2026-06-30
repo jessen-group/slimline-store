@@ -33,9 +33,26 @@ div[data-padding='small'] > div > .cards > ul > li {
   border-radius: 9px;
 }
 
-.cards > ul {
+div[data-margin='large'] > div > .cards > ul {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+div[data-margin='large'] > div > .cards > ul > li {
+  border: var(--shape-border-width-1) solid var(--color-neutral-500);
+  background-color: lightgray;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 9px;
+}
+
+.cards > ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   list-style: none;
   padding: 0;
