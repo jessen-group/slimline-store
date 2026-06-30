@@ -180,7 +180,7 @@ export default async function decorate(block) {
   nav.innerHTML = `
     <div class="nav-brand">
       <a href="/">
-        <img src="/icons/dline/logo-white.png" alt="DLine Logo">
+        <img src="/icons/dline/logo-white-solid.png" alt="DLine Logo">
       </a>
     </div>
 
