@@ -189,13 +189,13 @@ export default async function decorate(block) {
         <li class="nav-drop">
           <span>Products</span>
           <ul class="dropdown">
-            <li><a href="/products/product-1">Commercial Display Screens</a></li>
+            <li><a href="https://main--slimline-store--jessen-group.aem.page/products/commercial-display-screens">Commercial Display Screens</a></li>
             <li><a href="https://main--slimline-store--jessen-group.aem.page/products/high-brightness-window-displays">High Brightness Window Displays</a></li>
-            <li><a href="/products/product-3">Outdoor Digital Displays</a></li>
-            <li><a href="/products/product-4">Interactive Kiosks</a></li>
-            <li><a href="/products/product-5">Freestanding Digital Displays</a></li>
-            <li><a href="/products/product-6">Accessories & Mounting</a></li>
-            <li><a href="/products/product-7">Video Walls & Large Format (LED)</a></li>
+            <li><a href="https://main--slimline-store--jessen-group.aem.page/products/outdoor-digital-displays">Outdoor Digital Displays</a></li>
+            <li><a href="https://main--slimline-store--jessen-group.aem.page/products/interactive-kiosks">Interactive Kiosks</a></li>
+            <li><a href="https://main--slimline-store--jessen-group.aem.page/products/freestanding-digital-displays">Freestanding Digital Displays</a></li>
+            <li><a href="https://main--slimline-store--jessen-group.aem.page/products/accessories-and-mounting">Accessories & Mounting</a></li>
+            <li><a href="https://main--slimline-store--jessen-group.aem.page/products/video-walls-and-large-format">Video Walls & Large Format (LED)</a></li>
           </ul>
         </li>
 
