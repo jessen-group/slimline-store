@@ -598,10 +598,10 @@ main .section[data-margin="small"] {
 }
 
 main .section[data-margin="medium"] {
-    /* margin: var(--spacing-small) 0; */
     background-image: url('../../images/main-bg-gradient.png');
     background-size: cover;
     background-position: center;
+    padding: 8rem 10rem; /* Top and bottom padding */
 }
 
 main .section[data-margin="large"] {
@@ -637,6 +637,7 @@ main .section[data-margin="xbig"] > div > div > div > div > pre > code {
   display: inline-block;
   padding: 4px 12px;
   border-radius: 9px;
+  background-color: #d6b0ff7d;
 }
 
 main .section[data-margin="xbig"] > div > div > div > div > h2, 
