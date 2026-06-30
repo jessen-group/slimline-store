@@ -2,7 +2,7 @@
   margin-top: var(--spacing-xbig);
 }
 
-.cards > ul {
+/* .cards > ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -14,6 +14,22 @@
 .cards > ul > li {
   border: var(--shape-border-width-1) solid var(--color-neutral-500);
   background-color: var(--background-color);
+} */
+
+.cards > ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cards > ul > li {
+  border: var(--shape-border-width-1) solid var(--color-neutral-500);
+  background-color: var(--background-color);
+  text-align: center;
+  padding: 1rem;
 }
 
 .cards .cards-card-body {
