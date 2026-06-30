@@ -559,7 +559,12 @@ main .section[data-margin="medium"] {
 }
 
 main .section[data-margin="large"] {
-    margin: var(--spacing-medium) 0;
+    display: block;
+    width: fit-content;
+    margin: var(--spacing-medium) auto;
+    padding: 5rem;
+    background-color: aliceblue;
+    border-radius: 30px;
 }
 
 main .section[data-margin="big"] {
