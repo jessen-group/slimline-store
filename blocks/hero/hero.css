@@ -34,5 +34,6 @@
 @media (min-width: 900px) {
   .hero {
     padding: 40px 32px;
+    margin-bottom: 40px;
   }
 }

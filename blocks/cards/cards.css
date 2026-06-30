@@ -27,9 +27,10 @@
 
 .cards > ul > li {
   border: var(--shape-border-width-1) solid var(--color-neutral-500);
-  background-color: var(--background-color);
+  background-color: lightgray;
   text-align: center;
   padding: 1rem;
+  border-radius: 9px;
 }
 
 .cards .cards-card-body {
