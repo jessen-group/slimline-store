@@ -618,12 +618,33 @@ main .section[data-margin="big"] {
 }
 
 main .section[data-margin="xbig"] {
-    display: block;
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
     width: fit-content;
     margin: var(--spacing-medium) auto;
     padding: 5rem;
-    background-color: #3f3265;
+    background-color: #3f3265d1;
     border-radius: 20px;
+    height: 300px;
+}
+
+main .section[data-margin="xbig"] > div > div > div > div > pre > code {
+  font: var(--type-body-2-default-font);
+  letter-spacing: var(--type-body-2-default-letter-spacing);
+  font-family: "Montserrat", sans-serif;
+  color: #292929;
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 9px;
+}
+
+main .section[data-margin="xbig"] > div > div > div > div > h2, 
+main .section[data-margin="xbig"] > div > div > div > div > p{
+  letter-spacing: var(--type-body-2-default-letter-spacing);
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  display: inline-block;
 }
 
 main .section[data-margin="xxbig"] {
