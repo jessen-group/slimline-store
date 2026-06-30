@@ -244,7 +244,8 @@ h6 {
   font-family: "Montserrat", sans-serif;
 }
 
-#the-professional, #led-display, #partner-for-business, #high-brightnesspro-digital-displays {
+#the-professional, #led-display, #partner-for-business, #high-brightnesspro-digital-displays, 
+#commercial-display-screens {
   color: #fff;
   font-size: clamp(2rem, 5vw, 52px);
   font-weight: 300;
