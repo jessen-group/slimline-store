@@ -164,6 +164,7 @@ table {
   border-collapse: separate;
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
+  font-size: 12px;
 }
 
 table th,
