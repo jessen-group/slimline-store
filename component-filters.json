@@ -86,5 +86,11 @@
       "text",
       "image"
     ]
+  },
+  {
+    "id": "embed",
+    "components": [
+      "embed"
+    ]
   }
 ]

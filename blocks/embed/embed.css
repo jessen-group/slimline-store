@@ -1,0 +1,23 @@
+.embed {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.embed iframe {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+}
+
+.embed-content {
+  width: 100%;
+  max-width: 100%;
+}
+
+.embed-content iframe,
+.embed-content embed,
+.embed-content object {
+  width: 100%;
+  border: none;
+}

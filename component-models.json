@@ -433,6 +433,18 @@
     ]
   },
   {
+    "id": "embed",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "code",
+        "label": "Embed Code",
+        "valueType": "string",
+        "value": ""
+      }
+    ]
+  },
+  {
     "id": "enrichment",
     "fields": [
       {
