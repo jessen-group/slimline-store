@@ -363,7 +363,17 @@ pre {
   font-family: "Montserrat", sans-serif;
 }
 
-div > div > div > pre > code, main > div div > pre > code {
+main > div > div > pre > code {
+  font: var(--type-body-2-default-font);
+  letter-spacing: var(--type-body-2-default-letter-spacing);
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 9px;
+}
+
+div > div > div > pre > code {
   font: var(--type-body-2-default-font);
   letter-spacing: var(--type-body-2-default-letter-spacing);
   font-family: "Montserrat", sans-serif;
@@ -535,7 +545,7 @@ main > .section:first-of-type {
 /* section metadata - styles - start */
 main .section.light,
 main .section.highlight {
-  background-color: var(--color-neutral-100);
+  background-color: #ffffff;
   margin: 0;
   padding: var(--spacing-xbig) 0;
 }
