@@ -61,7 +61,7 @@
       });
   </script>
   <script nonce="aem" src="/scripts/scripts.js" type="module"></script>
-  <script nonce="aem" type="module">
+  <!-- <script nonce="aem" type="module">
     window.addEventListener('load', () => {
       if (document.referrer) {
         const { origin, pathname } = new URL(document.referrer);
@@ -76,7 +76,7 @@
         }
       }
     });
-  </script>
+  </script> -->
   <script nonce="aem" type="module">
     import { sampleRUM } from '/scripts/aem.js';
     sampleRUM('404', { source: document.referrer });
